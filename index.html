@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ENTEBOR | Tecnologia em Borracha e Poliuretano</title>
+  <meta name="description" content="Soluções de engenharia em elastômeros para a indústria. Vedação, amortecimento e revestimento de alta durabilidade, sob medida, para as condições mais severas." />
+  <meta name="theme-color" content="#0a0f1f" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="img/logo transparente.webp" type="image/webp" />
+</head>
+<body>
+
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#topo" class="nav__brand" aria-label="ENTEBOR - Início">
+        <img src="img/logo transparente.webp" alt="ENTEBOR" class="nav__logo" />
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Navegação principal">
+        <a href="#sobre">Institucional</a>
+        <a href="#setores">Setores</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#materiais">Materiais</a>
+        <a href="#processo">Processo</a>
+        <a href="#contato" class="nav__cta">Solicitar orçamento</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="topo">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__photo"></div>
+      <div class="hero__mesh"></div>
+      <div class="hero__grid"></div>
+    </div>
+
+    <div class="hero__content">
+      <span class="eyebrow reveal" data-reveal>
+        <span class="eyebrow__dot"></span>
+        Empresa Nacional de Tecnologia em Borracha e Poliuretano
+      </span>
+
+      <h1 class="hero__title">
+        <span class="line reveal" data-reveal>Elastômeros de</span>
+        <span class="line reveal" data-reveal data-delay="80"><em>engenharia</em> para</span>
+        <span class="line reveal" data-reveal data-delay="160">as condições mais severas</span>
+      </h1>
+
+      <p class="hero__lead reveal" data-reveal data-delay="240">
+        Desenvolvemos soluções de vedação, amortecimento e revestimento em borracha
+        e poliuretano, sob medida, para a indústria que não pode parar.
+      </p>
+
+      <div class="hero__actions reveal" data-reveal data-delay="320">
+        <a href="#contato" class="btn btn--primary">
+          Solicitar orçamento
+          <svg viewBox="0 0 24 24" class="ico"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#produtos" class="btn btn--ghost">Ver produtos</a>
+      </div>
+
+      <div class="hero__strip reveal" data-reveal data-delay="400">
+        <div class="hero__stat">
+          <strong data-count="7" data-suffix="">0</strong>
+          <span>setores atendidos</span>
+        </div>
+        <div class="hero__stat">
+          <strong data-count="10" data-suffix="+">0</strong>
+          <span>compostos formulados</span>
+        </div>
+        <div class="hero__stat">
+          <strong data-count="100" data-suffix="%">0</strong>
+          <span>peças sob medida</span>
+        </div>
+        <div class="hero__stat">
+          <strong data-static="BR">BR</strong>
+          <span>atendimento nacional</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#sobre" class="hero__scroll" aria-label="Rolar para baixo">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>EPDM</span><i></i><span>Nitrílica NBR</span><i></i><span>Silicone</span><i></i>
+      <span>Neoprene</span><i></i><span>Viton FPM</span><i></i><span>Poliuretano</span><i></i>
+      <span>Borracha Natural</span><i></i><span>Butyl</span><i></i><span>Hypalon</span><i></i>
+      <span>EPDM</span><i></i><span>Nitrílica NBR</span><i></i><span>Silicone</span><i></i>
+      <span>Neoprene</span><i></i><span>Viton FPM</span><i></i><span>Poliuretano</span><i></i>
+      <span>Borracha Natural</span><i></i><span>Butyl</span><i></i><span>Hypalon</span><i></i>
+    </div>
+  </div>
+
+  <!-- SOBRE / INSTITUCIONAL -->
+  <section class="about section" id="sobre">
+    <div class="container about__grid">
+      <div class="about__media reveal" data-reveal>
+        <div class="about__imgwrap">
+          <img src="img/fabrica.webp" alt="Linha de produção industrial da ENTEBOR" loading="lazy" />
+          <div class="about__badge">
+            <strong>Engenharia própria</strong>
+            <span>formulação de compostos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__text">
+        <span class="kicker reveal" data-reveal>Quem somos</span>
+        <h2 class="reveal" data-reveal data-delay="80">
+          Tecnologia nacional que resolve onde a borracha comum falha
+        </h2>
+        <p class="reveal" data-reveal data-delay="160">
+          A ENTEBOR projeta e fabrica artefatos técnicos em borracha e poliuretano para
+          aplicações que exigem desempenho real: calor extremo, abrasão, contato com
+          óleos e ataque químico. Cada peça nasce de um composto formulado para a sua
+          condição de uso.
+        </p>
+
+        <ul class="about__list">
+          <li class="reveal" data-reveal data-delay="200">
+            <svg viewBox="0 0 24 24" class="ico"><path d="M20 6 9 17l-5-5"/></svg>
+            Peças sob medida a partir de desenho técnico ou amostra
+          </li>
+          <li class="reveal" data-reveal data-delay="260">
+            <svg viewBox="0 0 24 24" class="ico"><path d="M20 6 9 17l-5-5"/></svg>
+            Laudos técnicos e certificados de qualidade
+          </li>
+          <li class="reveal" data-reveal data-delay="320">
+            <svg viewBox="0 0 24 24" class="ico"><path d="M20 6 9 17l-5-5"/></svg>
+            Atendimento nacional com entrega via transportadoras
+          </li>
+        </ul>
+
+        <a href="#contato" class="link-arrow reveal" data-reveal data-delay="360">
+          Fale com a engenharia
+          <svg viewBox="0 0 24 24" class="ico"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SETORES / ÁREAS DE ATUAÇÃO -->
+  <section class="sectors section" id="setores">
+    <div class="container">
+      <div class="section__head">
+        <span class="kicker reveal" data-reveal>Áreas de atuação</span>
+        <h2 class="reveal" data-reveal data-delay="80">Onde a ENTEBOR trabalha</h2>
+        <p class="reveal" data-reveal data-delay="140">
+          Componentes técnicos projetados para a rotina pesada de cada indústria.
+        </p>
+      </div>
+
+      <div class="sectors__grid">
+        <!-- card 1 -->
+        <article class="sector reveal" data-reveal style="--img:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=70')">
+          <div class="sector__icon">
+            <svg viewBox="0 0 24 24"><path d="M3 17h2l1-4h8l3 4h4M7 13V8h6l3 5M9 21a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm9 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg>
+          </div>
+          <h3>Agropecuário</h3>
+          <p>Componentes para tratores, colheitadeiras e implementos agrícolas.</p>
+        </article>
+        <!-- card 2 -->
+        <article class="sector reveal" data-reveal data-delay="60" style="--img:url('https://images.unsplash.com/photo-1578319439584-104c94d37305?auto=format&fit=crop&w=900&q=70')">
+          <div class="sector__icon">
+            <svg viewBox="0 0 24 24"><path d="m14 3 7 7-4 4-7-7 4-4ZM9 8 3 14v7h7l6-6M4 20l5-5"/></svg>
+          </div>
+          <h3>Mineração</h3>
+          <p>Soluções com alta resistência à abrasão e ao impacto contínuo.</p>
+        </article>
+        <!-- card 3 -->
+        <article class="sector reveal" data-reveal data-delay="120" style="--img:url('https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=900&q=70')">
+          <div class="sector__icon">
+            <svg viewBox="0 0 24 24"><path d="M8 3h8a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3ZM5 11h14M9 18l-2 3M15 18l2 3M9 7h6"/></svg>
+          </div>
+          <h3>Ferroviário</h3>
+          <p>Vedação e amortecimento para infraestrutura e material rodante.</p>
+        </article>
+        <!-- card 4 -->
+        <article class="sector reveal" data-reveal data-delay="180" style="--img:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=70')">
+          <div class="sector__icon">
+            <svg viewBox="0 0 24 24"><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3M7 7h10v10H7z"/></svg>
+          </div>
+          <h3>Eletrônicos</h3>
+          <p>Isolamento dielétrico e proteção contra vibração e umidade.</p>
+        </article>
+        <!-- card 5 -->
+        <article class="sector reveal" data-reveal data-delay="240" style="--img:url('https://images.unsplash.com/photo-1590247813693-5541d1c609fd?auto=format&fit=crop&w=900&q=70')">
+          <div class="sector__icon">
+            <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l5-3 5 3v11M9 21v-4h2v4M19 21v-6l-4-2"/></svg>
+          </div>
+          <h3>Cimenteiras</h3>
+          <p>Peças preparadas para altas temperaturas e ambientes agressivos.</p>
+        </article>
+        <!-- card 6 -->
+        <article class="sector reveal" data-reveal data-delay="300" style="--img:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=70')">
+          <div class="sector__icon">
+            <svg viewBox="0 0 24 24"><path d="M3 21h18M6 21V8l6-4 6 4v13M10 12h4M10 16h4M10 21v-3h4v3"/></svg>
+          </div>
+          <h3>Construção civil</h3>
+          <p>Perfis de vedação para esquadrias, fachadas e juntas.</p>
+        </article>
+        <!-- card 7 -->
+        <article class="sector sector--wide reveal" data-reveal data-delay="360" style="--img:url('https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=1200&q=70')">
+          <div class="sector__icon">
+            <svg viewBox="0 0 24 24"><path d="M5 13l1.5-4.5A2 2 0 0 1 8.4 7h7.2a2 2 0 0 1 1.9 1.5L19 13m-14 0h14m-14 0v4h2v-2m10 2v-2h2v2M7 17H5v-4m14 4h-2M8 13h.01M16 13h.01"/></svg>
+          </div>
+          <h3>Automotivo</h3>
+          <p>Artefatos técnicos para montadoras e o mercado de reposição, com repetibilidade de série.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section class="products section" id="produtos">
+    <div class="container">
+      <div class="section__head">
+        <span class="kicker reveal" data-reveal>Mais procurados</span>
+        <h2 class="reveal" data-reveal data-delay="80">Linha de produtos</h2>
+        <p class="reveal" data-reveal data-delay="140">
+          Do perfil extrudado à peça moldada, tudo formulado para a sua aplicação.
+        </p>
+      </div>
+
+      <div class="products__grid">
+        <article class="product reveal" data-reveal>
+          <div class="product__img"><img src="img/perfil_silicone.webp" alt="Perfil de silicone" loading="lazy" /></div>
+          <div class="product__body">
+            <span class="product__tag">Silicone</span>
+            <h3>Perfil de silicone</h3>
+            <p>Estabilidade térmica de -60 °C a 200 °C e excelente isolamento.</p>
+          </div>
+        </article>
+
+        <article class="product reveal" data-reveal data-delay="60">
+          <div class="product__img"><img src="img/esponjoso.webp" alt="Borracha esponjosa de EPDM" loading="lazy" /></div>
+          <div class="product__body">
+            <span class="product__tag">EPDM</span>
+            <h3>Borracha esponjosa</h3>
+            <p>Vedação leve com ótima recuperação e resistência ao tempo.</p>
+          </div>
+        </article>
+
+        <article class="product reveal" data-reveal data-delay="120">
+          <div class="product__img"><img src="img/solido.webp" alt="Perfil sólido nitrílico NBR" loading="lazy" /></div>
+          <div class="product__body">
+            <span class="product__tag">NBR</span>
+            <h3>Perfil sólido nitrílico</h3>
+            <p>Alta resistência a óleos, combustíveis e abrasão.</p>
+          </div>
+        </article>
+
+        <article class="product reveal" data-reveal data-delay="180">
+          <div class="product__img"><img src="img/vedacao.webp" alt="Vedação para transformadores" loading="lazy" /></div>
+          <div class="product__body">
+            <span class="product__tag">Vedação</span>
+            <h3>Vedação para transformadores</h3>
+            <p>Juntas e gaxetas que mantêm a estanqueidade sob carga.</p>
+          </div>
+        </article>
+
+        <article class="product reveal" data-reveal data-delay="240">
+          <div class="product__img"><img src="img/perfil_borracha.webp" alt="Perfil de borracha" loading="lazy" /></div>
+          <div class="product__body">
+            <span class="product__tag">Perfis</span>
+            <h3>Perfil de borracha</h3>
+            <p>Geometrias variadas para vedação e acabamento técnico.</p>
+          </div>
+        </article>
+
+        <article class="product reveal" data-reveal data-delay="300">
+          <div class="product__img"><img src="img/coxim.webp" alt="Coxim de borracha" loading="lazy" /></div>
+          <div class="product__body">
+            <span class="product__tag">Amortecimento</span>
+            <h3>Coxim</h3>
+            <p>Controle de vibração e ruído entre componentes metálicos.</p>
+          </div>
+        </article>
+
+        <article class="product reveal" data-reveal data-delay="360">
+          <div class="product__img"><img src="img/batente.webp" alt="Batente de borracha" loading="lazy" /></div>
+          <div class="product__body">
+            <span class="product__tag">Impacto</span>
+            <h3>Batente</h3>
+            <p>Absorção de impacto e fim de curso em equipamentos.</p>
+          </div>
+        </article>
+
+        <article class="product product--cta reveal" data-reveal data-delay="420">
+          <div class="product__ctabody">
+            <h3>Não achou a sua peça?</h3>
+            <p>Fabricamos sob medida a partir do seu desenho ou amostra.</p>
+            <a href="#contato" class="btn btn--primary btn--sm">
+              Enviar projeto
+              <svg viewBox="0 0 24 24" class="ico"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIAIS / TABELA TÉCNICA INTERATIVA -->
+  <section class="materials section" id="materiais">
+    <div class="container">
+      <div class="section__head">
+        <span class="kicker reveal" data-reveal>Especificações técnicas</span>
+        <h2 class="reveal" data-reveal data-delay="80">Explorador de elastômeros</h2>
+        <p class="reveal" data-reveal data-delay="140">
+          Compare faixa de temperatura e desempenho de cada composto. Selecione um material
+          para ver o detalhe ou compare todos na matriz.
+        </p>
+      </div>
+
+      <div class="materials__panel reveal" data-reveal>
+        <!-- Controles -->
+        <div class="materials__bar">
+          <div class="seg" id="viewSeg" role="tablist" aria-label="Modo de visualização">
+            <button class="seg__btn is-active" data-view="explore" role="tab">Explorar</button>
+            <button class="seg__btn" data-view="matrix" role="tab">Matriz completa</button>
+          </div>
+          <label class="materials__sort">
+            Ordenar por
+            <select id="sortSelect">
+              <option value="default">Padrão</option>
+              <option value="tmax">Temperatura máxima</option>
+              <option value="tmin">Temperatura mínima</option>
+              <option value="abrasion">Abrasão</option>
+              <option value="chemical">Resist. química</option>
+            </select>
+          </label>
+        </div>
+
+        <!-- VIEW: EXPLORAR -->
+        <div class="materials__explore" id="viewExplore">
+          <div class="mat-list" id="matList" role="tablist" aria-label="Materiais"></div>
+          <div class="mat-detail" id="matDetail"></div>
+        </div>
+
+        <!-- VIEW: MATRIZ -->
+        <div class="materials__matrix" id="viewMatrix" hidden>
+          <div class="matrix__scroll">
+            <table class="matrix">
+              <thead>
+                <tr>
+                  <th class="matrix__name">Material</th>
+                  <th>Faixa de temperatura</th>
+                  <th>Abrasão</th>
+                  <th>Resist. química</th>
+                  <th>Calor / UV</th>
+                  <th>Elétrica</th>
+                </tr>
+              </thead>
+              <tbody id="matrixBody"></tbody>
+            </table>
+          </div>
+          <p class="materials__note">
+            <svg viewBox="0 0 24 24" class="ico"><path d="M12 8h.01M11 12h1v4h1"/><circle cx="12" cy="12" r="9"/></svg>
+            Valores de referência baseados em ensaios laboratoriais padronizados (ASTM). A escala térmica vai de -70 °C a 260 °C.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section class="process section" id="processo">
+    <div class="container">
+      <div class="section__head">
+        <span class="kicker reveal" data-reveal>Como trabalhamos</span>
+        <h2 class="reveal" data-reveal data-delay="80">Do desenho à peça aprovada</h2>
+      </div>
+
+      <div class="process__track">
+        <div class="process__step reveal" data-reveal>
+          <span class="process__num">01</span>
+          <h3>Briefing técnico</h3>
+          <p>Recebemos o desenho ou a amostra e entendemos a condição de uso.</p>
+        </div>
+        <div class="process__step reveal" data-reveal data-delay="80">
+          <span class="process__num">02</span>
+          <h3>Formulação</h3>
+          <p>Selecionamos o composto e a dureza ideais para a aplicação.</p>
+        </div>
+        <div class="process__step reveal" data-reveal data-delay="160">
+          <span class="process__num">03</span>
+          <h3>Amostra e laudo</h3>
+          <p>Produzimos a amostra com laudos e certificados de qualidade.</p>
+        </div>
+        <div class="process__step reveal" data-reveal data-delay="240">
+          <span class="process__num">04</span>
+          <h3>Produção e entrega</h3>
+          <p>Fabricamos em série com entrega nacional via transportadoras.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq section">
+    <div class="container faq__grid">
+      <div class="faq__head">
+        <span class="kicker reveal" data-reveal>Dúvidas frequentes</span>
+        <h2 class="reveal" data-reveal data-delay="80">Antes de pedir o orçamento</h2>
+        <p class="reveal" data-reveal data-delay="140">
+          Não encontrou a resposta? Fale direto com a nossa equipe técnica.
+        </p>
+        <a href="#contato" class="btn btn--ghost reveal" data-reveal data-delay="200">Falar com a equipe</a>
+      </div>
+
+      <div class="faq__list reveal" data-reveal data-delay="120">
+        <details class="faq__item">
+          <summary>Vocês fabricam peças sob medida?<span class="faq__plus"></span></summary>
+          <p>Sim. Trabalhamos a partir de desenho técnico ou de uma amostra física para reproduzir a geometria e o desempenho que você precisa.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Como escolho o material certo?<span class="faq__plus"></span></summary>
+          <p>Use o explorador de elastômeros nesta página como ponto de partida e nos envie a condição de uso. A engenharia confirma o composto ideal.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Vocês emitem laudos e certificados?<span class="faq__plus"></span></summary>
+          <p>Sim. Fornecemos laudos técnicos e certificados de qualidade conforme a aplicação e a exigência do cliente.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Atendem todo o Brasil?<span class="faq__plus"></span></summary>
+          <p>Atendemos em âmbito nacional, com envio das peças por transportadoras de confiança.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO / CTA -->
+  <section class="contact section" id="contato">
+    <div class="container contact__grid">
+      <div class="contact__info">
+        <span class="kicker reveal" data-reveal>Orçamento</span>
+        <h2 class="reveal" data-reveal data-delay="80">Vamos resolver a sua aplicação</h2>
+        <p class="reveal" data-reveal data-delay="140">
+          Conte o que você precisa vedar, amortecer ou revestir. Respondemos com a
+          recomendação técnica e o orçamento.
+        </p>
+
+        <ul class="contact__channels">
+          <li class="reveal" data-reveal data-delay="180">
+            <span class="contact__ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+            <div>
+              <strong>Telefones</strong>
+              <a href="tel:+553135970597">(31) 3597-0597</a> · <a href="tel:+553131601103">(31) 3160-1103</a>
+            </div>
+          </li>
+          <li class="reveal" data-reveal data-delay="240">
+            <span class="contact__ic"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 7l8 6 8-6"/></svg></span>
+            <div>
+              <strong>E-mail comercial</strong>
+              <a href="mailto:vendas1@entebor.com.br">vendas1@entebor.com.br</a>
+            </div>
+          </li>
+          <li class="reveal" data-reveal data-delay="300">
+            <span class="contact__ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.7-7-11a7 7 0 0 1 14 0c0 5.3-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div>
+              <strong>Fábrica</strong>
+              R. Texaco, 470 - Jardim Piemonte, Betim - MG, 32689-350
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact__form reveal" data-reveal data-delay="120" id="quoteForm" novalidate>
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required placeholder="Seu nome" autocomplete="name" />
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa" autocomplete="organization" />
+          </div>
+          <div class="field">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" autocomplete="tel" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required placeholder="voce@empresa.com.br" autocomplete="email" />
+        </div>
+        <div class="field">
+          <label for="mensagem">O que você precisa?</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva a peça, o material e a condição de uso" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block">
+          Enviar pedido de orçamento
+          <svg viewBox="0 0 24 24" class="ico"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <p class="contact__ok" id="formMsg" hidden></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="img/logo transparente.webp" alt="ENTEBOR" class="footer__logo" />
+        <p>Empresa Nacional de Tecnologia em Borracha e Poliuretano.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navegação</h4>
+        <a href="#sobre">Institucional</a>
+        <a href="#setores">Setores</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#materiais">Materiais</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <a href="tel:+553135970597">(31) 3597-0597</a>
+        <a href="tel:+553131601103">(31) 3160-1103</a>
+        <a href="mailto:vendas1@entebor.com.br">vendas1@entebor.com.br</a>
+      </div>
+      <div class="footer__col">
+        <h4>Endereço</h4>
+        <p>R. Texaco, 470<br />Jardim Piemonte<br />Betim - MG, 32689-350</p>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <span>&copy; <span id="year"></span> ENTEBOR. Todos os direitos reservados.</span>
+      <span>Borracha e poliuretano de engenharia.</span>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/553135970597" class="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.4A10 10 0 1 0 12 2Zm0 2a8 8 0 0 1 6.7 12.4l-.3.5.6 2.1-2.2-.6-.5.3A8 8 0 1 1 12 4Zm-3 4c-.3 0-.7.1-.9.5-.3.5-1 1.1-1 2.6s1 3 1.2 3.2c.2.3 2 3.2 5 4.4 2.5 1 3 .8 3.6.7.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4l-2-1c-.3-.1-.5-.2-.7.1l-.7 1c-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.1-.3 0-.4.2-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5L11 9c-.2-.6-.4-.6-.6-.6h-.5Z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

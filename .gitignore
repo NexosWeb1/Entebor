@@ -1,0 +1,40 @@
+# Ambiente
+.env
+.env.*
+!.env.example
+*.local
+*.log
+
+# Chaves e segredos
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+credentials*.json
+service-account*.json
+*secret*.json
+
+# Dependencias e build
+node_modules/
+dist/
+build/
+.next/
+
+# Config local de agentes / editores
+.claude/
+.agents/
+.vscode/
+.idea/
+
+# Bancos locais
+*.sqlite
+*.db
+
+# Sistema operacional
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Temporarios
+_tmp/
