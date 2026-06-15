@@ -257,9 +257,11 @@ body::before{
   transition:transform .4s var(--ease),border-color .4s,box-shadow .4s;
 }
 .product:hover{transform:translateY(-7px);border-color:var(--line-2);box-shadow:var(--glow)}
-.product__img{aspect-ratio:4/3;overflow:hidden;background:radial-gradient(circle at 50% 40%,#1a2444,#0a1022);position:relative}
-.product__img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(7,11,22,.55))}
-.product__img img{width:100%;height:100%;object-fit:contain;padding:22px;transition:transform .6s var(--ease)}
+.product__img{aspect-ratio:4/3;overflow:hidden;position:relative;
+  background:radial-gradient(circle at 50% 32%,#f7f9fd,#e4e9f2);border-bottom:1px solid var(--line)}
+.product__img::after{content:"";position:absolute;inset:0;pointer-events:none;
+  box-shadow:inset 0 -46px 48px -32px rgba(7,11,22,.28),inset 0 0 0 1px rgba(255,255,255,.5)}
+.product__img img{width:100%;height:100%;object-fit:contain;padding:26px;transition:transform .6s var(--ease);mix-blend-mode:multiply}
 .product:hover .product__img img{transform:scale(1.09) rotate(-1.5deg)}
 .product__body{padding:20px 22px 24px}
 .product__tag{

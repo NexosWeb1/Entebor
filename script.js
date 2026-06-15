@@ -142,7 +142,7 @@
 
   function renderDetail() {
     var m = materials[current];
-    var left = pct(m.tmin), width = pct(m.tmax) - left;
+    var width = pct(m.tmax);
     var bars = props.map(function (p) {
       var v = m.r[p.key];
       return '<div class="mat-bar"><div class="mat-bar__top"><b>' + p.label +
@@ -155,7 +155,7 @@
       '<div class="mat-detail__title"><h3>' + m.name + '</h3><span>Norma ASTM: ' + m.astm + '</span></div></div>' +
       '<p class="mat-detail__desc">' + m.desc + '</p>' +
       '<div class="thermal"><div class="thermal__label"><span>Faixa de operação</span><span>°C</span></div>' +
-      '<div class="thermal__track"><span class="thermal__fill" style="left:' + left + '%;width:' + width + '%"></span></div>' +
+      '<div class="thermal__track"><span class="thermal__fill" style="left:0;width:' + width + '%"></span></div>' +
       '<div class="thermal__scale"><span>-70</span><span>0</span><span>120</span><span>260</span></div>' +
       '<div class="thermal__range"><span>mín <b>' + m.tmin + ' °C</b></span><span>máx <b>' + m.tmax + ' °C</b></span></div></div>' +
       '<div class="mat-bars">' + bars + '</div>';
@@ -178,12 +178,12 @@
   function renderMatrix() {
     matrixBody.innerHTML = "";
     materials.forEach(function (m) {
-      var left = pct(m.tmin), width = pct(m.tmax) - left;
+      var width = pct(m.tmax);
       var tr = document.createElement("tr");
       tr.innerHTML =
         '<td class="matrix__name"><span class="cell-abbr">' + m.abbr + '</span><strong>' + m.name +
         '</strong><small>ASTM ' + m.astm + '</small></td>' +
-        '<td><div class="thermbar"><i style="left:' + left + '%;width:' + width + '%"></i></div>' +
+        '<td><div class="thermbar"><i style="left:0;width:' + width + '%"></i></div>' +
         '<small>' + m.tmin + " a " + m.tmax + ' °C</small></td>' +
         "<td>" + dots(m.r.abrasion) + "</td>" +
         "<td>" + dots(m.r.chemical) + "</td>" +
